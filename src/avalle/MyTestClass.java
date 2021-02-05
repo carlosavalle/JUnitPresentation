@@ -31,10 +31,9 @@ public class MyTestClass {
         StringBuilder s1 = new StringBuilder("abc");
         StringBuilder s2 = new StringBuilder("abc");
 
-// Why this tells me they are NOT the same?
-        assertSame(s1.toString(), s2.toString());
 
-// Why this tells me they are equals?
+        assertNotSame(s1.toString(), s2.toString());
+
         //assertEquals(s1.toString(), s2.toString());
     }
 }
